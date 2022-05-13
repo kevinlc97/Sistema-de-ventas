@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'SistemaVentas';
+  title = 'Sistema de ventas';
+  body = 'Hola mundo cuerpo del sistema';
 }
