@@ -9,10 +9,11 @@ import { BienvenidoComponent } from './bienvenido/bienvenido.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 const appRoutes: Routes = [
-  {path: '', component: BienvenidoComponent},
+  {path: 'inicio', component: BienvenidoComponent},
   {path: 'prueba', component: PruebaComponent},
+  {path: '', redirectTo: '/inicio', pathMatch: 'full'},
   {path: '**', component: NotFoundComponent},
-  /* {path: '', redirectTo: '/prueba', pathMatch: 'full'}, */
+  
 ];
 
 @NgModule({
